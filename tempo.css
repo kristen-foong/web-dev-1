@@ -1,0 +1,792 @@
+* {
+    font-family:Montserrat, Arial;
+}
+body {
+    position:relative;
+    background:#050505;
+    margin: 0px;
+    overflow-y:scroll;
+    font-family:Montserrat, Arial;
+    line-height:100%;
+    height:100%;
+}
+body a {
+    text-decoration:none;
+}
+body::-webkit-scrollbar {width:10px;}
+body::-webkit-scrollbar-track{background:#050505;}
+body::-webkit-scrollbar-thumb {background:#ffcc00;}
+nav {
+    padding:20px 0px 20px 0px;
+    line-height:100%;
+    width:100%;
+    background:#050505;
+    text-align:center;
+    position:fixed;
+    top:0; left:0;
+    z-index:10;
+}
+nav a {
+    color:#fff;
+    letter-spacing:3px;
+    margin:0px 20px 0px 20px;
+    font-family:Montserrat;
+    font-weight:700;
+    font-size:10px;
+    text-decoration:none;
+    transition:all 0.3s ease-in-out;
+    text-transforM:uppercase;
+}
+nav a:hover {
+    color:#ffcc00;
+}
+nav a:visited {color:#aaa}
+
+.top {
+    width:100%;
+    height:500px;
+    position:relative;
+    background-image:url(https://78.media.tumblr.com/8e782da8bb14a7c56fe18247af8059a9/tumblr_nhw7qoJEJT1thk6vpo1_1280.gif);
+    background-position:center center;
+    background-size:cover;
+    background-attachment:fixed;
+    padding-top:50px;
+    line-height:100%;
+}
+.title {
+    background:#ffcc00;
+    width:300px;
+    height:300px;
+    border-radius:100%;
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+    margin-top:100px;
+}
+.tempo {
+    font-family:Montserrat;
+    font-weight:900;
+    color:#000;
+    text-align:center;
+    width:300px;
+    font-size:60px;
+    position:absolute;
+    top:145px; left:5px;
+    transition:all 1s ease-in-out;
+    opacity:0;
+}
+.tempolog {
+    font-size:150px;
+    color:#000;
+    text-align:center;
+    width:300px;
+    position:absolute;
+    top:75px; left:5px;
+    transition:all 1s ease-in-out 0.5s;
+}
+.title:hover .tempolog {
+    opacity:0;
+    transition:all 1s ease-in-out;
+}
+.title:hover .tempo {
+    opacity:1;
+    transition:all 1s ease-in-out 0.5s;
+}
+
+#wrapper {
+    width:100%;
+    position:relative;
+}
+
+.about {
+    background:#050505;
+    padding:50px 0px 50px 0px;
+    width:100%;
+    text-align:center;
+}
+.aboutdesc {
+    margin:0 auto;
+    line-height:100%;
+    padding:30px;
+    font-family:Montserrat;
+    font-weight:700;
+    font-size:30px;
+    color:#fff;
+    text-align:center;
+}
+.about p {
+    margin:20px 0px 20px 0px;
+    font-family:Montserrat;
+    font-weight:400;
+    font-size:15px;
+    color:#fff;
+    text-align:center;
+}
+.about i {
+    font-size:30px;
+    margin:0px 20px 0px 20px;
+    transition:all 0.5s ease-in-out;
+}
+.about i:hover {
+    color:#ffcc00;
+}
+
+.signup {
+    padding:15px;
+    border-radius:25px;
+    background:#ffcc00;
+    text-align:center;
+    width:300px;
+    color:#000;
+    font-family:Montserrat;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin: 0 auto;
+    margin-top:35px;
+    transition:all 0.5s ease-in-out;
+    text-decoration:none;
+}
+.signup a {
+    text-decoration:none;
+    color:#000;
+    font-family:Montserrat;
+    font-weight:900;
+}
+.signup:hover {
+    background:#FFE066;
+}
+
+.instructions {
+    padding:80px 0px 80px 0px;
+    width:100%;
+    background-image:url(https://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/sdmdakiygwe80r9kxyyu.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center center;
+    text-align:center;
+    font-family:Montserrat;
+    font-size:55px;
+    color:#fff;
+    font-weight:800;
+    letter-spacing:2px;
+}
+.instructionsin {
+    margin:70px 100px 20px 100px;
+    display:flex;
+    flex-wrap:no-wrap;
+    justify-content:space-evenly;
+}
+.instructbox {
+    border:1px dashed #fff;
+    border-radius:25px;
+    background:rgba(0,0,0,0.6);
+    padding:55px 50px 50px 50px;
+    font-family:Montserrat;
+    font-size:15px;
+    letter-spacing:0px;
+    color:#fff;
+    font-weight:400;
+    width:30%;
+    text-align:justify;
+    position:relative;
+    margin:0px 20px 0px 20px;
+    line-height:25px;
+}
+.instructnum {
+    font-family:Montserrat;
+    font-weight:900;
+    color:#fff;
+    font-size:40px;
+    background:#050505;
+    border-radius:100%;
+    border:1px dashed #fff;
+    width:40px;
+    height:40px;
+    padding:15px;
+    text-align:center;
+    line-height:100%;
+    position:absolute;
+    top:-35px; left:38%;
+}
+
+.news {
+    width:100%;
+    height:450px;
+    display:flex;
+    flex-wrap:no-wrap;
+}
+.news1 {
+    width:34%;
+    height:450px;
+    background-image:url(http://images5.fanpop.com/image/answers/2227000/2227899_1323359755864.33res_500_483.jpg);
+    background-position:center center;
+    background-size:cover;
+    filter:brightness(70%);
+    transition:all 0.5s ease-in-out;
+}
+.news1:hover {
+    filter:brightness(100%);
+}
+.news2 {
+    width:34%;
+    height:450px;
+    background-image:url(http://oje-50ea.kxcdn.com/wp-content/uploads/2016/12/vinil-925x578.jpg);
+    background-position:center center;
+    background-size:cover;
+    filter:brightness(70%);
+    transition:all 0.5s ease-in-out;
+}
+.news2:hover {
+    filter:brightness(100%);
+}
+.news3 {
+    width:34%;
+    height:450px;
+    background-image:url(http://cdn1.theodysseyonline.com/files/2016/01/30/635897736665659188-2007689502_Live-Music-Band.jpg);
+    background-position:center center;
+    background-size:cover;
+    filter:brightness(70%);
+    transition:all 0.5s ease-in-out;
+}
+.news3:hover {
+    filter:brightness(100%);
+}
+.newscaption {
+    margin:200px 50px 0px 50px;
+    text-align:center;
+    padding:20px;
+    color:#fff;
+    font-family:Montserrat;
+    font-weight:800;
+    letter-spacing:2px;
+    font-size:15px;
+    transition:all 0.5s ease-in-out;
+    background:rgba(0,0,0,0.4);
+}
+.news1:hover .newscaption {opacity:1;}
+.news2:hover .newscaption {opacity:1;}
+.news3:hover .newscaption {opacity:1;}
+
+.rating {
+    background:#050505;
+    padding:80px 0px 100px 0px;
+    text-align:center;
+}
+.ratingtxt {
+    font-family:Montserrat;
+    font-weight:700;
+    font-size:30px;
+    line-height:35px;
+    color:#fff;
+    text-align:justify;
+    margin:0px 100px 0px 100px;
+}
+
+.devices {
+    padding:50px 0px 100px 0px;
+    background:#050505;
+    text-align:center;
+    line-height:100%;
+}
+.devices h1 {
+font-family:Montserrat;
+font-size:40px;
+color:#fff;
+line-height:100%;
+font-weight:700;
+}
+.devices p {
+margin:10px 0px 30px 0px;
+font-family:Montserrat;
+font-weight:400;
+font-size:15px;
+color:#fff;
+text-align:center;
+}
+.devices i {
+margin:0px 15px 0px 15px;
+transition:all 0.5s ease-in-out;
+color:#fff;
+font-size:35px;
+}
+.devices i:hover {
+color:#ffcc00;
+}
+
+.download {
+background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(https://static.pexels.com/photos/783243/pexels-photo-783243.jpeg);
+background-size:cover;
+background-position:center center;
+background-attachment:fixed;
+padding:125px 0px 125px 0px;
+width:100%;
+position:relative;
+}
+.downloaddesc {
+margin-left:55%;
+background:#ffcc00;
+padding:50px;
+color:#000;
+width:250px;
+font-family:Montserrat;
+font-size:12px;
+line-height:18px;
+font-weight:700;
+text-transform:uppercase;
+text-align:justify;
+box-shadow: 10px 10px 0px #050505;
+border-radius:10px;
+opacity:0.5;
+transition:all 0.5s ease-in-out;
+}
+.downloadimg {
+margin-left:55%;
+width:250px;
+padding:20px 0px 20px 0px;
+text-align:left;
+opacity:0.5;
+transition:all 0.5s ease-in-out;
+}
+.downloadimg i {
+margin-right:10px;
+padding:10px;
+border:5px solid #ffcc00;
+background:#050505;
+color:#ffcc00;
+font-size:30px;
+border-radius:10px;
+opacity:1;
+transition:all 0.5s ease-in-out;
+box-shadow:5px 5px 0px #050505;
+}
+.download:hover .downloaddesc {
+opacity:1;
+}
+.download:hover .downloadimg {
+opacity:1;
+}
+.downloadimg i:hover {
+color:#fff;
+border:5px solid #fff;
+}
+
+
+/*** FOOTER ***/
+
+footer {
+padding:0px 0px 15px 0px;
+text-align:center;
+font-family:Montserrat;
+font-size:8px;
+font-weight:400;
+text-transform:uppercase;
+letter-spacing:2px;
+line-height:100%;
+color:#fff;
+width:100%;
+    background:#050505;
+}
+
+.footmenu {
+background:#050505;
+position:relative;
+display:flex;
+flex-wrap:no-wrap;
+justify-content:center;
+width:100%;
+}
+.footlogo {
+font-size:30px;
+font-family:Montserrat;
+font-weight:900;
+color:#000;
+padding:11px 15px 11px 20px;
+background:#ffcc00;
+text-align:center;
+line-height:100%;
+margin:19px 0px 20px 0px;
+}
+.footmenuin {
+padding:30px;
+color:#ccc;
+text-align:center;
+line-height:100%;
+text-transform:uppercase;
+font-family:Montserrat;
+font-size:15px;
+position:relative;
+}
+.footmenuin h3 {
+color:#fff;
+font-weight:700;
+font-family:Montserrat;
+font-size:20px;
+text-align:center;
+text-transform:uppercase;
+padding:17px;
+border:1px dotted #ffcc00;
+}
+.footmenuin a {
+text-decoration:none;
+color:#fff;
+font-size:10px;
+font-weight:400;
+letter-spacing:2px;
+transition:all 0.3s ease-in-out;
+}
+.footmenuin a:hover {
+color:#ffcc00;
+}
+
+.footmedia {
+width:100%;
+padding:0px 0px 50px 0px;
+text-align:center;
+color:#fff;
+}
+.footmedia i {
+font-size:25px;
+margin:0px 15px 0px 15px;
+    transition:all 0.3s ease-in-out;
+}
+.footmedia i:hover {
+    color:#ffcc00;
+}
+
+
+
+/****BROWSE****/
+     
+.search {
+    width:100%;
+    height:500px;
+    border-collapse:collapse;
+    background:url(https://media.giphy.com/media/pGl2z0HfIA6ic/giphy.gif);
+    background-size:cover;
+    background-position:center center;
+    line-height:100%;
+}
+.searchbar {
+    background:rgba(0,0,0,0.6);
+    vertical-align:center;
+    text-align:center;
+}
+#searching {
+    padding:15px;
+    background:#fff;
+    border-radius:25px;
+    border:none;
+    width:300px;
+    font-family:Montserrat;
+    color:#000;
+    font-weight:400;
+    line-height:100%;
+    transition:all 0.3s ease-in-out;
+}
+#searching:focus{
+    width:350px;
+}
+.search h1 {
+    font-size:70px;
+    color:#ffcc00;
+    font-weight:700;
+    font-family:Montserrat;
+    line-height:100%;
+    margin:0px;
+}
+.search h3 {
+    font-family:Montserrat;
+    font-size:25px;
+    color:#fff;
+    font-weight:400;
+    line-height:100%;
+}
+
+.headings {
+padding:50px 0px 50px 100px;
+font-family:Montserrat;
+font-weight:700;
+color:#fff;
+text-align:left;
+letter-spacing:2px;
+text-transform:uppercase;
+font-size:30px;
+background:#050505;
+}
+
+#tophits {
+    background-image:url(https://static.tumblr.com/780712c8767b2329448b2263ed6edb1e/oh0ic6d/lZDna5ov9/tumblr_static_83jrtm8zhyo8sgsg00wgk8sw4_640_v2.jpg);
+}
+#newreleases {
+    background-image:url(https://78.media.tumblr.com/212999a285278f339ec33cecda0be4c1/tumblr_ov5yf445pm1vfgmkzo1_500.jpg);
+}
+#topartists {
+    background-image:url(http://static.sportpaleisgroep.be/sportpaleis/img/events/1920/0802184f167a8f084ac5ebea32ef755e01c55424/billboard.jpg);
+}
+#bestof {
+    background-image:url(https://i.axs.com/2018/01/alessia-cara-tickets_03-04-18_17_5a4ed35268573.jpg);
+}
+
+#funk {
+    background-image:url(http://www.prestwichandwhitefieldguide.co.uk/resources/images/5706771/);
+}
+#randb{
+    background-image:url(https://d2tml28x3t0b85.cloudfront.net/tracks/artwork/ecd6e370018a11e7a0e091d5ec897fc7/eda8b260018a11e79a6bd7c41de41bb9-perfect-art-ed.png);
+}
+#rock {
+    background-image:url(http://junkee.com/wp-content/uploads/2017/05/linkinparknew-e1496023762886.jpg);
+}
+#hiphop {
+    background-image:url(https://yt3.ggpht.com/a-/AK162_4o7DaLbLVyJXDzfXFUqh3acxlG0svm63Py8w=s900-mo-c-c0xffffffff-rj-k-no);
+}
+
+#michaeljackson {
+    background-image:url(http://78.media.tumblr.com/1a73d79b3faf1a6f9ad4dcde4c2da4d5/tumblr_mki91zaEQE1qfeid8o1_500.png);
+}
+#madonna {
+    background-image:url(https://s-media-cache-ak0.pinimg.com/originals/e0/39/5a/e0395adbd89c0c1482a87a6203651193.jpg);
+}
+#wham {
+    background-image:url(https://s-media-cache-ak0.pinimg.com/originals/da/79/4d/da794d45fa5b8b356f59bdd484d95cc9.jpg);
+}
+#queen {
+    background-image:url(https://s-media-cache-ak0.pinimg.com/originals/b9/2d/20/b92d203e56f996ece45702e93340fc42.jpg);
+}
+
+#mostplayed {
+    background-image:url(http://www.dreams.metroeve.com/wp-content/uploads/2017/03/dreams.metroeve_conductor-dreams-meaning.jpg);
+}
+#composers{
+    background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/1200px-Beethoven.jpg);
+}
+#piano {
+    background-image:url(https://i.imgur.com/qMHd6TK.jpg);
+}
+#orchestra {
+    background-image:url(https://wwwcmuseorg-lvzm5mr0z.stackpathdns.com/wp-content/uploads/2016/03/classical-music-superior.jpg);
+}
+
+.gallery {
+    margin:0 auto;
+    width:100%;
+    border-collapse:collapse;
+}
+.items {
+    width:25%;
+    height:300px;
+    background:#444;
+    margin:10px;
+    vertical-align:center;
+    text-align:center;
+    background-size:cover;
+    background-position:center center;
+    filter:brightness(70%);
+    transition:all 0.5s ease-in-out;
+}
+.items:hover {
+    filter:brightness(100%);
+}
+.gallery h1 {
+    padding:15px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    font-family:Montserrat;
+    font-weight:700;
+    font-size:20px;
+    text-align:center;
+    margin:30px;
+    text-transform:uppercase;
+}
+
+
+
+/*** when screen is 1028px ***/
+
+@media only screen and (max-width:1028px){
+    
+    .news1 {
+        width:34%;
+        height:350px;
+        background-image:url(http://images5.fanpop.com/image/answers/2227000/2227899_1323359755864.33res_500_483.jpg);
+        background-position:center center;
+        background-size:cover;
+        filter:brightness(70%);
+        transition:all 0.5s ease-in-out;
+    }
+    .news2 {
+        width:34%;
+        height:350px;
+        background-image:url(http://oje-50ea.kxcdn.com/wp-content/uploads/2016/12/vinil-925x578.jpg);
+        background-position:center center;
+        background-size:cover;
+        filter:brightness(70%);
+        transition:all 0.5s ease-in-out;
+    }
+    .news3 {
+        width:34%;
+        height:350px;
+        background-image:url(http://cdn1.theodysseyonline.com/files/2016/01/30/635897736665659188-2007689502_Live-Music-Band.jpg);
+        background-position:center center;
+        background-size:cover;
+        filter:brightness(70%);
+        transition:all 0.5s ease-in-out;
+    }
+    .newscaption {
+        margin:150px 50px 0px 50px;
+        text-align:center;
+        padding:20px;
+        color:#fff;
+        font-family:Montserrat;
+        font-weight:800;
+        letter-spacing:2px;
+        font-size:12px;
+        transition:all 0.5s ease-in-out;
+        background:rgba(0,0,0,0.4);
+        line-height:14px;
+    }
+    
+    .footlogo {
+    font-size:20px;
+    font-family:Montserrat;
+    font-weight:900;
+    color:#000;
+    padding:6px 10px 6px 15px;
+    background:#ffcc00;
+    text-align:center;
+    line-height:100%;
+    margin:14px 0px 15px 0px;
+    }
+    .footmenuin {
+    padding:30px 25px 30px 25px;
+    color:#ccc;
+    text-align:center;
+    line-height:100%;
+    text-transform:uppercase;
+    font-family:Montserrat;
+    font-size:10px;
+    position:relative;
+    }
+    .footmenuin h3 {
+    color:#fff;
+    font-weight:700;
+    font-family:Montserrat;
+    font-size:15px;
+    text-align:center;
+    text-transform:uppercase;
+    padding:12px;
+    border:1px dotted #ffcc00;
+    }
+
+
+    .downloaddesc {
+        margin:0 auto;
+        background:#ffcc00;
+        padding:40px;
+        color:#000;
+        width:250px;
+        font-family:Montserrat;
+        font-size:12px;
+        line-height:18px;
+        font-weight:700;
+        text-transform:uppercase;
+        text-align:justify;
+        box-shadow: 10px 10px 0px #050505;
+        border-radius:10px;
+        opacity:0.5;
+        transition:all 0.5s ease-in-out;
+    }
+    .downloadimg {
+        margin:0 auto;
+        width:250px;
+        padding:20px 0px 20px 0px;
+        text-align:left;
+        opacity:0.5;
+        transition:all 0.5s ease-in-out;
+        text-align:center;
+    }
+
+    
+    .items {
+        width:25%;
+        height:250px;
+        background:#444;
+        margin:10px;
+        vertical-align:center;
+        text-align:center;
+        background-size:cover;
+        background-position:center center;
+        filter:brightness(70%);
+        transition:all 0.5s ease-in-out;
+    }
+    .gallery h1 {
+        padding:15px;
+        background:rgba(0,0,0,0.5);
+        color:#fff;
+        font-family:Montserrat;
+        font-weight:700;
+        font-size:15px;
+        text-align:center;
+        margin:25px;
+        text-transform:uppercase;
+    }
+    
+}
+
+
+/**** ACCOUNT PAGE ****/
+
+#acc {
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(https://www.wallpaperflare.com/static/176/425/125/piano-grand-piano-musical-instrument-music-wallpaper.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+}
+
+#accnav {
+    background:transparent;
+}
+
+#accnav a:hover {
+    color:#fff;
+}
+
+#accwrapper {
+    width:100%;
+    height:100%;
+}
+
+#acctable {
+    min-height:500px;
+    margin:0 auto;
+    width:80%;
+}
+
+#acctable td {
+    vertical-align:center;
+    width:50%;
+}
+
+#acctableright {
+    text-align:right;
+}
+
+.acccirc {
+    width:400px;
+    height:400px;
+    background:#ffcc00;
+    border-radius:100%;
+    position:relative;
+}
+
+#accfoot {
+    background:transparent;
+}
+
+#accfoot .footmenu {
+    background:transparent;
+}
+
+#accfoot .footmenu h3 {
+    background:rgba(0,0,0,0.3);
+}
